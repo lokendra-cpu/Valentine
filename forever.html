@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gifts for Kumudh</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 420px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.gifts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gift {
+  background: rgba(255,255,255,0.25);
+  border-radius: 18px;
+  padding: 30px 0;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.gift:hover {
+  transform: scale(1.08);
+}
+
+.card {
+  background: rgba(255,255,255,0.25);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  color: #ff4f81;
+  font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="main">
+  <h1>Choose a gift </h1>
+
+  <div class="gifts">
+    <div class="gift" onclick="openGift(1)"></div>
+    <div class="gift" onclick="openGift(2)"></div>
+    <div class="gift" onclick="openGift(3)"></div>
+    <div class="gift" onclick="openGift(4)"></div>
+    <div class="gift" onclick="openGift(5)"></div>
+    <div class="gift" onclick="openGift(6)"></div>
+  </div>
+</div>
+
+<script>
+function openGift(n) {
+  const c = document.getElementById("main");
+
+  if (n === 1) {
+      c.innerHTML = "<div class='card'><h2></h2><p>You are the first and the best girl I reached baby , and that was my best desicion cutie</p><button onclick='location.reload()'>wanna watch next gift Lokendra's princess </button></div>";
+  }
+
+  if (n === 2) {
+      c.innerHTML = "<div class='card'><h2></h2><p>You are always at my side and always motivates me</p><button onclick='location.reload()'>wanna watch next gift Lokendra's princess </button></div>";
+  }
+
+  if (n === 3) {
+      c.innerHTML = "<div class='card'><h2></h2><p>I love you presence so much , times with you are the bestttt , everytime I meet you i don't wanna leave you </p><button onclick='location.reload()'>wanna watch next gift Lokendra's princess </button></div>";
+  }
+
+  if (n === 4) {
+      c.innerHTML = "<div class='card'><h2></h2><p> Ik I do many mistakes and tumko pareshaan bhi bhut krta hu but I also loves you so much princess </p><button onclick='location.reload()'>wanna watch next gift Lokendra's princess </button></div>";
+  }
+
+  if (n === 5) {
+      c.innerHTML = "<div class='card'><h2></h2><p>Idk how will time pass when we will be separated for years , I will miss you so much</p><button onclick='location.reload()'>wanna watch next gift Lokendra's princess </button></div>";
+  }
+
+  if (n === 6) {
+      c.innerHTML = "<div class='card'><h2></h2><p>I am falling in love with you more and more each day. Thank you for being my Valentine my cute penguin</p><button onclick='location.reload()'>wanna watch next gift Lokendra's princess </button></div>";
+  }
+}
+</script>
+
+</body>
+</html>
